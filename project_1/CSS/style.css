@@ -1,0 +1,193 @@
+/* <!-- Including one css file into other--> */
+@import "card.css";
+@import "navbar.css";
+@import "style_blog_post.css";
+/* <!-- start main page stying--> */
+html {
+    box-sizing: border-box;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    color: black;
+}
+body {
+    background: white;
+    margin: 30px 30px;
+    line-height: 1;
+}
+.btm {
+    background-color: burlywood;
+    color: chocolate;
+    padding: 0.6rem 1rem;
+    text-decoration: none;
+    border: 0;
+}
+.btm:hover {
+    background-color: chocolate;
+    color: burlywood;
+}
+
+footer {
+    display: flex;
+
+    background: saddlebrown;
+    /* align-items: center; */
+    height: 80px;
+    width: 100%;
+    justify-content: center;
+}
+footer p {
+    display: flex;
+    justify-content: center;
+    float: center;
+    color: burlywood;
+    text-transform: uppercase;
+}
+.social {
+    display: block;
+    justify-content: right;
+    /* float:  right;  */
+
+    /* text-transform: uppercase; */
+}
+.main_conten {
+    display: grid;
+    grid-gap: 30px;
+}
+
+/* main  section about blog - */
+.top_blog {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-areas:
+        "description  "
+        "topboxA"
+        " topboxB";
+}
+.description {
+    grid-area: description;
+    min-height: 300px;
+    background: url(image/car_coffee.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.description h1 {
+    font-size: 30px;
+    font-family: "Gill Sans";
+    margin-top: 0;
+    color: rgb(228, 214, 181);
+}
+.description p {
+    font-size: 20px;
+    font-family: "Gill Sans";
+    margin-top: 0;
+    color: rgb(228, 214, 181);
+    box-shadow: black;
+}
+
+.topboxA {
+    grid-area: topboxA;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: arial;
+}
+.topboxB {
+    grid-area: topboxB;
+    width: 200px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: arial;
+}
+.topboxA a,
+.topboxB a {
+    border: none;
+    outline: 0;
+    color: white;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+    /* width: 85%; */
+    font-size: 18px;
+}
+.topboxA img,
+.topboxB img {
+    padding: 3px;
+    margin: 10px;
+    margin-left: 30px;
+    border-radius: 10px;
+    width: 100px;
+}
+@media only screen and (min-width: 900px) {
+    .nav_bar ul{
+        display: grid;
+        grid-gap: 30px;
+        list-style: none;
+        grid-template-columns:  repeat(4, 1fr);
+        grid-template-rows: 1fr;
+       
+    }
+    .top_blog {
+        display: grid;
+        grid-gap: 20px;
+        grid-template-areas:
+            "description  description topboxA"
+            "description description topboxB";
+    }
+    .cardbox {
+        display: grid;
+        grid-gap: 20px;
+        grid-template-areas:
+        "card1 card2 card3"
+        "card4 card5 card6";
+           
+        /* grid-auto-rows: auto; */
+        line-height: 20px;
+        padding: 3px;
+        margin: 10px;
+    }
+    
+  }
+  /* @media screen and (min-width: 400px) and (max-width: 900px) {
+    /* css goes here */
+    /* .nav_bar{
+        display: grid;
+        grid-gap: 30px;
+        list-style: none;
+        grid-template-columns:1fr;
+        grid-template-rows: repeat(4, 1fr); 
+    }
+    .top_blog {
+        display: grid;
+        grid-gap: 20px;
+        grid-template-areas:
+            "description  description topboxA"
+            "description description topboxB";
+    }
+    .cardbox {
+        display: grid;
+        grid-gap: 20px;
+        grid-template-areas:
+        "card1 card2 card3"
+        "card4 card5 card6";
+           
+        /* grid-auto-rows: auto; 
+        line-height: 20px;
+        padding: 3px;
+        margin: 10px;
+    }
+  } */ 

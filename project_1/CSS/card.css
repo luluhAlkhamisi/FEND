@@ -1,0 +1,135 @@
+.cardbox {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-areas:
+    "card1 ""card2"" card3"
+    "card4 ""card5" "card6";
+       
+    /* grid-auto-rows: auto; */
+    line-height: 20px;
+    padding: 3px;
+    margin: 10px;
+}
+
+.cardbox button {
+    float: right;
+    text-align: center;
+    background-color: #b17316;
+    border: none;
+    color: wheat;
+    padding: 15px 32px;
+    text-decoration: none;
+
+    font-size: 12px;
+    font-weight: bold;
+    margin: 4px 2px;
+
+    /* justify-content: ; */
+}
+.cardbox button:hover {
+    background-color: tan;
+    color: chocolate;
+}
+.card1 {
+    background: url(image/small_cup.jpg);
+    background-size: cover;
+    background-position: left;
+    border: 2px solid #e7e7e7;
+    border-radius: 4px;
+    margin-bottom: 0.1rem;
+    padding: 0.3rem;
+    height: 100%;
+}
+/* .card1 h3{
+    background-position: center; 
+    align-items: center;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    font-family: 'Lucida Sans';
+        color:rgb(158, 119, 91);
+} */
+
+.card2 {
+    background: url(image/beans_in_fiar.jpg);
+    background-size: cover;
+    background-position: left;
+    border: 2px solid #e7e7e7;
+    border-radius: 4px;
+    margin-bottom: 0.1rem;
+    padding: 0.3rem;
+    height: 100%;
+}
+/* .card2 p{
+    text-transform: capitalize;
+    color: rgb(238, 238, 235);
+    padding-top: 0;
+   margin-top: 0;
+  
+ }
+.card2 h3{
+    text-transform: uppercase;
+   padding-top: 0;
+   margin-top: 0;
+        color: rgb(238, 238, 235);
+    
+} */
+.card3 {
+    background: url(image/latte.jpg);
+    background-size: cover;
+    background-position: left;
+    border: 2px solid #e7e7e7;
+    border-radius: 4px;
+    margin-bottom: 0.1rem;
+    padding: 0.3rem;
+    height: 100%;
+    /* grid-area: card3; */
+}
+.card2 span,
+.card3 span,
+.card4 span,
+.card5 span,
+.card6 span,
+.card1 span {
+    text-transform: uppercase;
+    background-color: darkgoldenrod;
+    padding-top: 0;
+    margin-top: 0;
+    /* color:peru */
+    /* text-transform: capitalize; */
+    height: 100%;
+    color: moccasin;
+}
+.card4 {
+    background: url(image/tree.jpg);
+    background-size: cover;
+    background-position: left;
+    border: 2px solid #e7e7e7;
+    border-radius: 4px;
+    margin-bottom: 0.1rem;
+    padding: 0.3rem;
+    /* grid-area: card4; */
+    height: 100%;
+}
+.card5 {
+    background: url(image/coffee_coner.jpg);
+    background-size: cover;
+    background-position: left;
+    border: 2px solid #e7e7e7;
+    border-radius: 4px;
+    margin-bottom: 0.1rem;
+    padding: 0.3rem;
+    height: 100%;
+    /* grid-area: card5; */
+}
+.card6 {
+    background: url(image/jeddah.jpg);
+    background-size: cover;
+    height: 100%;
+    background-position: left;
+    border: 2px solid #e7e7e7;
+    border-radius: 4px;
+    margin-bottom: 0.1rem;
+    padding: 0.5rem;
+    /* grid-area: card6; */
+}
+
